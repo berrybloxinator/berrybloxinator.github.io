@@ -4,13 +4,13 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
 .nav-bar {
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 .navigation a {
     text-decoration: none;
@@ -57,23 +57,23 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 400px;
-}
-.job-container {
-    background: background: linear-gradient(135deg, rgba(237,237,237,1) 0%,rgba(246,246,246,1)
-    36%,rgba(246,246,246,1) 36%,rgba(255,255,255,1) 100%);
+    height: auto;
+    margin: 20px 0;
 }
 .subscribe-text {
     text-align: center;
 }
 .subscribe-form, .job-form {
-    width: 75%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 input {
     border-radius: 5px;
     padding: 3px;
 }
-input[type='text'] {
+input[type='text'], input[type='email'], select, textarea {
     padding: 5px;
     width: 100%;
 }
@@ -87,8 +87,38 @@ input[type='submit'] {
     display: flex;
     align-items: center;
 }
-.label-input:last-child {
+.work-history {
+    margin-top: 20px;
+    text-align: center;
+}
+.work {
+    font-size: 18px;
+}
+.text-area {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 500px;
+}
+.availability {
+    margin: 20px;
+    font-size: 18px;
+}
+.check-box {
+    display: flex;
     justify-content: center;
+    margin: 10px;
+}
+.check-box div:first-child {
+    margin-right: 5px;
+}
+textarea {
+    margin: 10px 0;
+    resize: vertical;
+    height: 100px;
+}
+.great-fit {
+    margin-top: 20px;
 }
 .subscribe-title {
     font-size: 30px;
@@ -97,21 +127,19 @@ input[type='submit'] {
     font-size: 15px;
 }
 .left {
-    width: 25%;
+    width: 200px;
 }
 .right {
-    width: 75%;
+    width: 300px;
 }
 .burger-place {
     background: url('../images/umami.jpg');
     background-size: cover;
     min-height: 400px;
 }
-/*.parallax {*/
-/*    background-attachment: fixed;*/
-/*    background-position: center;*/
-/*    background-repeat: no-repeat;*/
-/*}*/
+hr {
+    width: 90%;
+}
 @media screen and (max-width: 900px) {
     .background-image {
         min-height: 400px;
@@ -144,6 +172,10 @@ input[type='submit'] {
     }
     .label-input {
         flex-direction: column;
+        width: 90%;
+    }
+    .text-area {
+        width: 90%;
     }
     .left, .right {
         width: 100%;
