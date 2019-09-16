@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.nav-bar {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigation a {
+    text-decoration: none;
+    color: #808080;
+}
+.facebook a {
+    color: #3e5b99;
+}
+.twitter a {
+    color: #1ea1f1;
+}
+.socials {
+    display: flex;
+}
+.socials a, .navigation a {
+    padding: 10px;
+    margin: 5px;
+}
+.logo a {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-bar {
+        flex-direction: column;
+        height: 100px;
+    }
+}
