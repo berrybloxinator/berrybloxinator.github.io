@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='../css/global.css'>
+    <link rel='stylesheet' href='../css/locations.css'>
+</head>
+<body>
+    <div class='container'>
+        <div class='nav-bar'>
+            <div class='logo'>
+                <a href='index.html'>
+                    <img src='../images/rockeyburgers02-logo.png' alt='rockey-burgers-logo' height='40'>
+                </a>
+            </div>
+            <div class='navigation'>
+                <a href='menu.html'>Menu</a>
+                <a href='locations.html'>Locations</a>
+                <a href='jobs.html'>Jobs</a>
+            </div>
+            <div class='socials'>
+                <div class='twitter'>
+                    <a href='http://www.twitter.com/keyburgers' target='_blank'>
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <div class='facebook'>
+                    <a href='http://facebook.com/keyburgers' target='_blank'>
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div id="map"></div>
+        <div class='title'>Utah Locations</div>
+        <div class='locations'>
+            <div class='box'>
+                <div class='subtitle'>Downtown Salt Lake City</div>
+                <div>346 Kearns Street,</div>
+                <div>Salt Lake City, UT 84111</div>
+                <div>Mon – Fri 11am to 8pm</div>
+                <div>Sat 10am to 8pm</div>
+                <div>Closed Sundays</div>
+                <div>801-677-0070</div>
+            </div>
+            <div class='box'>
+                <div class='subtitle'>Sandy</div>
+                <div>346 Murray Lane,</div>
+                <div>Sandy, UT 84093</div>
+                <div>Mon – Fri 11am to 8pm</div>
+                <div>Sat 10am to 8pm</div>
+                <div>Closed Sundays</div>
+                <div>801-777-0070</div>
+            </div>
+            <div class='box'>
+                <div class='subtitle'>Lehi</div>
+                <div>1205 Cabela Drive,</div>
+                <div>Lehi, UT 8403</div>
+                <div>Mon – Fri 11am to 8pm</div>
+                <div>Sat 10am to 8pm</div>
+                <div>Closed Sundays</div>
+                <div>801-777-0070</div>
+            </div>
+            <div class='box'>
+                <div class='subtitle'>Provo</div>
+                <div>841 N University Ave,</div>
+                <div>Provo, UT 84604</div>
+                <div>Mon – Fri 11am to 8pm</div>
+                <div>Sat 10am to 8pm</div>
+                <div>Closed Sundays</div>
+                <div>801-777-0070</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function initMap() {
+            // The location of Uluru
+            let uluru = {lat: -25.344, lng: 131.036};
+            // The map, centered at Uluru
+            let map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 4, center: uluru});
+            // The marker, positioned at Uluru
+            let marker = new google.maps.Marker({position: uluru, map: map});
+        }
+    </script>
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDw4GDhOZsJZC3v3Bw4vX9o_Cdc5VLtyTo&callback=initMap">
+    </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+.job-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 20px 0;
+}
+.form-text {
+    text-align: center;
+}
+.job-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    border-radius: 5px;
+    padding: 3px;
+}
+input[type='text'], input[type='email'], select, textarea {
+    padding: 5px;
+    width: 100%;
+}
+input[type='submit'] {
+    background-color: #3173dd;
+    color: white;
+    padding: 8px 15px;
+}
+.label-input {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+.work-history {
+    margin-top: 20px;
+    text-align: center;
+}
+.work {
+    font-size: 18px;
+}
+.text-area {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 500px;
+}
+.availability {
+    margin: 20px;
+    font-size: 18px;
+}
+.check-box {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.check-box div:first-child {
+    margin-right: 5px;
+}
+textarea {
+    margin: 10px 0;
+    resize: vertical;
+    height: 100px;
+}
+.great-fit {
+    margin-top: 20px;
+}
+hr {
+    width: 90%;
+}
+.left {
+    width: 200px;
+}
+.right {
+    width: 300px;
+}
+.form-title {
+    font-size: 35px;
+}
+.form-subtitle {
+    font-size: 18px;
+}
+.work-questions {
+    margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+    input[type='submit'] {
+        width: 100%;
+    }
+    .label-input {
+        flex-direction: column;
+        width: 90%;
+    }
+    .text-area, .work-questions {
+        width: 90%;
+    }
+    .left, .right {
+        width: 100%;
+    }
+}

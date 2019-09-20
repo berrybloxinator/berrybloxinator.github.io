@@ -18,7 +18,7 @@
     align-items: center;
     padding-left: 100px;
 }
-.subscribe-container, .job-container, .faq {
+.subscribe-container, .faq {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,7 +29,7 @@
 .form-text {
     text-align: center;
 }
-.subscribe-form, .job-form {
+.subscribe-form {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@ input {
     border-radius: 5px;
     padding: 3px;
 }
-input[type='text'], input[type='email'], select, textarea {
+input[type='text'], input[type='email'] {
     padding: 5px;
     width: 100%;
 }
@@ -52,39 +52,6 @@ input[type='submit'] {
     margin: 20px;
     display: flex;
     align-items: center;
-}
-.work-history {
-    margin-top: 20px;
-    text-align: center;
-}
-.work {
-    font-size: 18px;
-}
-.text-area {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    width: 500px;
-}
-.availability {
-    margin: 20px;
-    font-size: 18px;
-}
-.check-box {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
-}
-.check-box div:first-child {
-    margin-right: 5px;
-}
-textarea {
-    margin: 10px 0;
-    resize: vertical;
-    height: 100px;
-}
-.great-fit {
-    margin-top: 20px;
 }
 .form-title {
     font-size: 30px;
@@ -102,9 +69,6 @@ textarea {
     background: url('../images/umami.jpg');
     background-size: cover;
     min-height: 400px;
-}
-hr {
-    width: 90%;
 }
 .eating-burger {
     background-image: url('../images/eatingburger.jpeg');
@@ -125,15 +89,16 @@ div[onclick] {
     margin: 20px;
     cursor: pointer;
 }
+.about {
+    width: 90%;
+    margin: 20px auto;
+}
+.about div {
+    margin: 20px;
+}
 .footer {
     height: 300px;
     background-color: #808080;
-}
-.reveal {
-    height: 0;
-}
-.height {
-    max-height: 500px;
 }
 @media screen and (max-width: 900px) {
     .background-image, .eating-burger {

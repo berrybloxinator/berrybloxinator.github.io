@@ -32,10 +32,3 @@ body {
 .logo a {
     margin-left: 10px;
 }
-
-@media screen and (max-width: 600px) {
-    .nav-bar {
-        flex-direction: column;
-        height: 100px;
-    }
-}

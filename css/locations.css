@@ -1,0 +1,31 @@
+#map {
+    height: 400px;
+    width: 100%;
+}
+
+.title {
+    font-size: 35px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.box {
+    border: 1px solid #d3d3d3;
+    padding: 5px;
+    border-radius: 3px;
+    width: 500px;
+    margin: 20px 0;
+    box-shadow: 5px 5px 7px -7px rgba(0,0,0,0.53);
+}
+
+.locations {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-size: 18px;
+}
