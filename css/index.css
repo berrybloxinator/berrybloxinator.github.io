@@ -101,6 +101,7 @@ div[onclick] {
 iframe {
     display: block;
     margin: 0 auto;
+    border: none;
 }
 @media screen and (max-width: 900px) {
     .background-image, .eating-burger {
