@@ -11,6 +11,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    box-shadow: 0 2px 13px -4px rgba(0,0,0,0.75);
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1;
 }
 .navigation a {
     text-decoration: none;
@@ -44,6 +49,11 @@ body {
     height: 50px;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 2px 13px -4px rgba(0,0,0,0.75);
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+    z-index: 1;
 }
 
 .nav-bar-resp i {
